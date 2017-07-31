@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/second_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#8300c4"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/action_tab"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <!-- <com.cybcxvb.cobleeg151015.AdView
+            android:id="@+id/myAdView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />-->
+        <com.startapp.android.publish.ads.banner.Banner
+            android:id="@+id/startAppBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editText_searchKeyWord"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:visibility="gone"></EditText>
+
+        <ListView
+            android:id="@+id/listView_youTubeResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
